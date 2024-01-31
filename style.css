@@ -1,5 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: lightgray;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: green;
+  font-style: oblique;
+}
+
+a {
+  font-size: 1.1rem;
+}
+
+/************************** Category page ***********************/
+
+.flex_links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  padding-right: 6%;
+  padding-top: 3%;
+}
+
+.logo_header {
+  text-decoration: none;
+  padding-left: 4.5%;
+}
+
+.underoverskrift {
+  padding: 0 4.5%;
+}
+
+.grid_3-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0% 4%;
+}
+
+.kategori_boks {
+  background-color: grey;
+  padding: 5%;
+  margin: 2% 2%;
+  border-radius: 7px;
+  text-decoration: none;
+  color: White;
+}
+/************************** Category page END ***********************/
+
+/************************** Productlist page ***********************/
+
+.product_box {
+  padding-top: 10%;
+  padding-bottom: 15%;
+}
+
+.product_image {
+  height: 400px;
+  width: auto;
+}
+
+/************************** Productlist page END ***********************/
+
+/************************** Product page ***********************/
+.tights_display {
+  max-height: 700px;
+  width: auto;
+}
+/************************** Product page END ***********************/
+
+/********************************************* FULD SKÆRM **************************************************/
+@media screen and (min-width: 750px) {
+  /************************** Productlist page ***********************/
+  .grid_3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 12%;
+    align-items: center;
+    margin-left: 5%;
+  }
+  /************************** //Productlist page END ***********************/
+
+  /************************** Product page ***********************/
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /************************** //Produc page END ***********************/
+}
+
 /* BURGERMENU */
-/* header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,65 +220,5 @@ nav {
   nav.active .menu a {
     font-size: 24px;
   }
-} */
+}
 /* BURGERMENU SLUT */
-
-/************************** Category page ***********************/
-
-.flex_links {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: flex-end;
-  padding-right: 5%;
-  padding-top: 5%;
-}
-
-.logo_header {
-  text-decoration: none;
-  padding-left: 4.5%;
-}
-
-.underoverskrift {
-  padding: 0 4.5%;
-}
-
-.grid_3-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0% 4%;
-}
-
-.kategori_boks {
-  background-color: grey;
-  padding: 5%;
-  margin: 2% 2%;
-  border-radius: 7px;
-  text-decoration: none;
-  color: White;
-}
-/************************** Category page END ***********************/
-
-/************************** Productlist page ***********************/
-
-.product_box {
-  padding-top: 15%;
-}
-
-.product_image {
-  height: 400px;
-  width: auto;
-}
-
-/************************************'********* FULD SKÆRM **************************************************/
-@media screen and (min-width: 750px) {
-  /************************** Productlist page ***********************/
-  .grid_3col {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 12%;
-    align-items: center;
-    margin-left: 5%;
-  }
-  /************************** //Productlist page END ***********************/
-}
