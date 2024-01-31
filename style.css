@@ -142,3 +142,25 @@ nav {
 /************************** Category page END ***********************/
 
 /************************** Productlist page ***********************/
+
+.product_box {
+  padding-top: 15%;
+}
+
+.product_image {
+  height: 400px;
+  width: auto;
+}
+
+/************************************'********* FULD SKÆRM **************************************************/
+@media screen and (min-width: 750px) {
+  /************************** Productlist page ***********************/
+  .grid_3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 12%;
+    align-items: center;
+    margin-left: 5%;
+  }
+  /************************** //Productlist page END ***********************/
+}
