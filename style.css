@@ -10,7 +10,7 @@ img {
 }
 
 body {
-  background-color: lightgray;
+  background-color: rgb(241, 222, 193);
 }
 
 h1 {
@@ -39,24 +39,30 @@ a {
   font-size: 1.1rem;
 }
 
+/************************** index ***********************/
+.overskrift {
+  text-align: center;
+  padding: 3% 5%;
+}
+
+.forside_boks {
+  background-color: orange;
+  margin: 0% 25%;
+  margin-bottom: 2%;
+  padding: 3% 0;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.forside_boks a {
+  text-decoration: none;
+}
+
 /************************** Category page ***********************/
 
-.flex_links {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: flex-end;
-  padding-right: 6%;
-  padding-top: 3%;
-}
-
-.logo_header {
-  text-decoration: none;
-  padding-left: 4.5%;
-}
-
 .underoverskrift {
-  padding: 0 4.5%;
+  padding: 3% 4.5%;
+  text-align: center;
 }
 
 .grid_3-3 {
@@ -66,14 +72,14 @@ a {
 }
 
 .kategori_boks {
-  background-color: grey;
-  padding: 5%;
+  background-color: orange;
+  padding: 8%;
   margin: 2% 2%;
   border-radius: 7px;
   text-decoration: none;
-  color: White;
+  color: black;
+  text-align: center;
 }
-/************************** Category page END ***********************/
 
 /************************** Productlist page ***********************/
 
@@ -87,14 +93,11 @@ a {
   width: auto;
 }
 
-/************************** Productlist page END ***********************/
-
 /************************** Product page ***********************/
 .tights_display {
-  max-height: 700px;
+  max-height: 550px;
   width: auto;
 }
-/************************** Product page END ***********************/
 
 /********************************************* FULD SKÆRM **************************************************/
 @media screen and (min-width: 750px) {
@@ -106,14 +109,24 @@ a {
     align-items: center;
     margin-left: 5%;
   }
-  /************************** //Productlist page END ***********************/
 
   /************************** Product page ***********************/
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    padding-top: 3%;
   }
-  /************************** //Produc page END ***********************/
+
+  .display_img {
+    display: flex;
+    justify-content: end;
+  }
+
+  .tights_display {
+    max-height: 700px;
+    width: auto;
+  }
 }
 
 /* BURGERMENU */
@@ -122,8 +135,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -161,7 +172,7 @@ nav {
 }
 
 .menu a:hover {
-  color: #f00;
+  color: orange;
 }
 
 .burger {
@@ -204,7 +215,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #fff;
+    background-color: #ffffffd9;
     position: absolute;
     top: 60px;
     left: 0;
