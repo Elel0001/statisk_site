@@ -29,7 +29,10 @@ function init() {
   console.log("init");
 
   clothesTemplate = document.querySelector(".clothes_template");
-  console.log("clothes_template", clothesContainer);
+  console.log("clothes_template", clothesTemplate);
+
+  clothesContainer = document.querySelector(".clothes_container");
+  console.log("clothes_container", clothesContainer);
 
   fetch(clothesURL)
     .then(function (response) {
@@ -52,7 +55,7 @@ function showClothes(clothesJSON) {
     clothesClone.querySelector(".clothes_brandname").textContent = clothes.brandname;
     clothesClone.querySelector(".clothes_price").textContent = clothes.price;
     clothesClone.querySelector(".clothes_discount").textContent = clothes.discount;
-    clothesClone.querySelector(".clothes_souldout").textContent = clothes.souldout;
+    clothesClone.querySelector(".clothes_souldout").textContent = clothes.souldut;
     clothesContainer.appendChild(clothesClone);
   });
 }
